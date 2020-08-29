@@ -10,14 +10,13 @@
 <body>
     <div class="container">
         <div class="image">
-            <img src="img/logo.png" alt="">
-            <input type="text" placeholder="Enter your name" autofocus id="name">
-            <button id="button">Enter</button>
-            <p id="error"></p>
+            <h1>Welcome <span id="user"></span>!</h1>
+            <button class="butt"><a href="pop.html">Click to start game</a> </button>
         </div>
-       
     </div>
-
-    <script src="js/index.js"></script>
+    <script>
+        let user = document.querySelector("#user");
+        user.textContent = window.localStorage.getItem("name");
+    </script>
 </body>
-</html> 
+</html>

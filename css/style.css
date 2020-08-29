@@ -2,12 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 .container{
+    background: url("/img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: black;
-    color: white;
+    /* color: white; */
     width: 600px;
-    height: 650px;
+    height: 100vh;
     margin: auto;
     position: absolute;
     top: 0;
@@ -23,10 +28,8 @@
 
 }
 .balloon{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: cornflowerblue;
+    width: 20%;
+    height: 15%;
     margin-top: 20px;
     color: transparent;
 }
@@ -35,40 +38,138 @@ h1{
     margin-bottom: 25px;
     text-align: center;
 }
-.pink{
-    background-color: pink;
-}
-.purple{
-    background-color: purple;
-}
-.yellow{
-    background-color:yellow;
-}
-.orange{
-    background-color: orange;
-}
 
-#heading{
-    color: yellow;
-}
+/* #heading{
+    color: #D7FC54;
+} */
 #btn{
 padding: 10px 45px;
 border: none;
 outline: none;
+background-color: black;
+color: white;
 }
 .btnDiv{
     text-align: center;
     margin-top: 15px;
 }
+.image{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+}
+input{
+    width:70% ;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+#button{
+    width: 25%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+   
+}
+.butt{
+    width: 50%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+   
+}
+a{
+    text-decoration: none;
+    color: #03A8BC;
+}
+.green {
+    animation-name: green;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3s;
+
+  }
+
+ 
+@keyframes green {
+    0% {transform: translateY(-30px);}
+
+    100% {transform: translateY(0px);}
+
+}
+.purple {
+    animation-name: purple;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3s;
+
+  }
+
+ 
+@keyframes purple {
+    0% {transform: translateX(-30px);}
+
+    100% {transform: translateX(0px);}
+
+}
+.pink {
+    animation-name: pink;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3s;
+
+  }
+
+ 
+@keyframes pink {
+    0% {transform: translateY(0px);}
+
+    100% {transform: translateY(-30px);}
+
+}
+.lemon {
+    animation-name: lemon;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3s;
+
+  }
+
+ 
+@keyframes lemon{
+    0% {transform: translateX(0px);}
+
+    100% {transform: translateX(-30px);}
+
+}
+  
 
 @media(max-width:850px){
     .container{
         width: 100vw;
-        height: 100vh;
+        height: 100%;
     }
-    .balloon{
+    /* .balloon{
         width: 60px;
         height: 60px;
         /* padding: 25px; */
-    }
+    /* }  */
 }
