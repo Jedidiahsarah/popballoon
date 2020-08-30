@@ -25,6 +25,7 @@
 .balloonDiv{
     display: flex;
     justify-content: space-around;
+    
 
 }
 .balloon{
@@ -43,15 +44,23 @@ h1{
     color: #D7FC54;
 } */
 #btn{
-padding: 10px 45px;
+/* padding: 10px 45px; */
 border: none;
 outline: none;
 background-color: black;
 color: white;
+position: absolute;
+bottom: 0;
+width: 200px;
+height: 40px;
+
 }
 .btnDiv{
     text-align: center;
     margin-top: 15px;
+    width: 400px;
+      
+   
 }
 .image{
     text-align: center;
@@ -166,6 +175,15 @@ a{
     .container{
         width: 100vw;
         height: 100%;
+    }
+    .btnDiv{
+        width: 100vw;
+        margin: 0;
+        text-align: left;
+    }
+    #btn{
+        width: 100%;
+        height: 50px;
     }
     /* .balloon{
         width: 60px;
